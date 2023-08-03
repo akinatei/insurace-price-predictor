@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Prices</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img"></div>
+    <form class="form">
+        <h2>Age</h2>
+        <input type="number" class="age" id="uiage" class="floatLabel" name="age" value="25">
+        <h2>BMI</h2>
+        <input type="number" class="bmi" id="uibmi" class="floatLabel" name="bmi" value="12.25">
+        <h2>Children</h2>
+        <input type="number" class="children" id="uichildren" class="floatLabel" name="Squareft" value="4">
+    </form>
+    <form class="form">
+        <h2>Gender</h2>
+        <div>
+            <select id="uisex" class="sex" name="">
+                <option value="" disabled="disabled" selected="selected">
+                    choose gender
+                </option>
+            </select>
+        </div>
+        <h2>Smoker</h2>
+        <div>
+            <select id="uismoker" class="smoker" name="">
+                <option value="" disabled="disabled" selected="selected">
+                    are you a smoker ?
+                </option>
+            </select>
+        </div>
+        <h2>Location</h2>
+        <div>
+            <select id="uiregion" class="region" name="">
+                <option value="" disabled="disabled" selected="selected">
+                    choose a Region
+                </option>
+                <option>Northeast</option>
+            </select>
+        </div>
+        <br>
+        <button class="submit" onclick="onClickedInsurancePremium()" type="button">Insurance Premium</button>
+        <div id="uipremium" class="result"><h2></h2></div>
+
+
+    </form>
+</body>
+</html>
